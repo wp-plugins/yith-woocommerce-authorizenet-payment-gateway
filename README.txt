@@ -76,11 +76,11 @@ If you have suggestions about how to improve YITH Authorize.net Payment Gateway,
 * English (Default)
 
 If you have created your own language pack, or have an update for an existing one, you can send [gettext PO and MO file](http://codex.wordpress.org/Translating_WordPress "Translating WordPress")
-[use](http://yithemes.com/contact/ "Your Inspiration Themes") so we can bundle it into YITH Authorize.net Payment Gateway Languages.
+[use](http://yithemes.com/contact "Your Inspiration Themes") so we can bundle it into YITH Authorize.net Payment Gateway Languages.
 
 == Documentation ==
 
-Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woocommerce-authorizenet-payment-gateway/).
+Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woocommerce-authorizenet-payment-gateway).
 
 == Upgrade notice ==
 
