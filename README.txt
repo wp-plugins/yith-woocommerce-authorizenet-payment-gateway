@@ -3,17 +3,20 @@
 Contributors: yithemes
 Tags: authorize.net, woocommerce, products, themes, yit, e-commerce, shop, payment gateway, yith, woocommerce authorize.net payment gateway, woocommerce 2.3 ready, credit card, authorize
 Requires at least: 3.5.1
-Tested up to: 4.1
-Stable tag: 1.0.0
+Tested up to: 4.1.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-YITH Authorize.net allow your users to pay using the services of Authorize.net network. Needs WooCommerce to work.
-WooCommerce 2.2.x compatible.
+YITH Authorize.net allows your users to pay using the Authorize.net network services. It requires WooCommerce to work. WooCommerce 2.3.x compatible.
 
 == Description ==
 
-YITH Authorize.net Payment Gateway extend the WooCommerce default mode of operation, adding the possibility to pay with credit card in addition to the normal checkout procedures, through the services offered by the Authorize.net network.
+YITH Authorize.net Payment Gateway extends the WooCommerce default payment modes, adding the possibility to pay with credit cards through the services offered by the Authorize.net network. A system that indeed includes an amount of reliability, with the guarantee that your purchase process will not be stopped by lost payments. In addition, research have proved that the more payment methods are available on your website, the more website's reliability is improved: this means that adding credit card will persuade more in choosing your shop to purchase.
+Main features:
+- Use of Authorize.net for the payment system
+- Neat redirect to Authorize.net's pages for the conclusion of the payment
+- A completely automatic Instant Payment Notification service managed by Authorize.net
 
 = Installation =
 
@@ -45,6 +48,11 @@ Here we provide support, not on wordpress.org were, usually we do not read topic
 
 == Changelog ==
 
+= 1.0.1 =
+
+* Updated: removed unused libraries
+* Fixed: minor fixes
+
 = 1.0.0 =
 
 * Initial release
@@ -67,3 +75,14 @@ If you have suggestions about how to improve YITH Authorize.net Payment Gateway,
 
 If you have created your own language pack, or have an update for an existing one, you can send [gettext PO and MO file](http://codex.wordpress.org/Translating_WordPress "Translating WordPress")
 [use](http://yithemes.com/contact/ "Your Inspiration Themes") so we can bundle it into YITH Authorize.net Payment Gateway Languages.
+
+== Documentation ==
+
+Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woocommerce-authorizenet-payment-gateway/).
+
+== Upgrade notice ==
+
+= 1.0.1 =
+
+* Updated: removed unused libraries
+* Fixed: minor fixes

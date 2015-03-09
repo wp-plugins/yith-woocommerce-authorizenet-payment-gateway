@@ -51,7 +51,7 @@ if( ! class_exists( 'YITH_WCAUTHNET_Admin' ) ) {
 		/**
 		 * @var string official documentation url
 		 */
-		protected $_official_documentation = 'http://yithemes.com/docs-plugins/yith-woocommerce-authorize-net/';
+		protected $_official_documentation = 'http://yithemes.com/docs-plugins/yith-woocommerce-authorizenet-payment-gateway/';
 
 		/**
 		 * Returns single instance of the class
@@ -75,7 +75,8 @@ if( ! class_exists( 'YITH_WCAUTHNET_Admin' ) ) {
 		 */
 		public function __construct() {
 			$this->admin_tabs = array(
-				'credit_card' => __( 'Credit Card', 'yith-wcauthnet' )
+				'credit_card' => __( 'Credit Card', 'yith-wcauthnet' ),
+                'premium' => __( 'Premium Version', 'yith-wcauthnet' )
 			);
 
 			// register gateway panel
@@ -90,6 +91,20 @@ if( ! class_exists( 'YITH_WCAUTHNET_Admin' ) ) {
 			//Add action links
 			add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 4 );
 			add_filter( 'plugin_action_links_' . plugin_basename( YITH_WCAUTHNET_DIR . '/' . basename( YITH_WCAUTHNET_FILE ) ), array( $this, 'action_links' ) );
+
+            //  Show plugin premium tab
+            add_action( 'yith_authorizenet_premium', array( $this, 'premium_tab' ) );
+		}
+
+		/**
+		 * Get the premium landing uri
+		 *
+		 * @since   1.0.0
+		 * @author  Andrea Grillo <andrea.grillo@yithemes.com>
+		 * @return  string The premium landing link
+		 */
+		public function get_premium_landing_uri(){
+			return defined( 'YITH_REFER_ID' ) ? $this->_premium_landing . '?refer_id=' . YITH_REFER_ID : $this->_premium_landing;
 		}
 
 		/**
@@ -160,7 +175,7 @@ if( ! class_exists( 'YITH_WCAUTHNET_Admin' ) ) {
 			$links[] = '<a href="' . admin_url( "admin.php?page=yith_wcauthnet_panel" ) . '">' . __( 'Settings', 'yith-wcauthnet' ) . '</a>';
 
 			if ( ! ( defined( 'YITH_WCAUTHNET_PREMIUM' ) && YITH_WCAUTHNET_PREMIUM ) ) {
-				//$links[] = '<a href="' . $this->_premium_landing . '" target="_blank">' . __( 'Premium Version', 'yith-wcauthnet' ) . '</a>';
+				$links[] = '<a href="' . $this->get_premium_landing_uri() . '" target="_blank">' . __( 'Premium Version', 'yith-wcauthnet' ) . '</a>';
 			}
 
 			return $links;
@@ -182,7 +197,7 @@ if( ! class_exists( 'YITH_WCAUTHNET_Admin' ) ) {
 		 * @use plugin_row_meta
 		 */
 		public function plugin_row_meta( $plugin_meta, $plugin_file, $plugin_data, $status ) {
-			//$plugin_meta[] = '<a href="' . $this->_official_documentation . '" target="_blank">' . __( 'Plugin Documentation', 'yith-wcauthnet' ) . '</a>';
+			$plugin_meta[] = '<a href="' . $this->_official_documentation . '" target="_blank">' . __( 'Plugin Documentation', 'yith-wcauthnet' ) . '</a>';
 
 			return $plugin_meta;
 		}
@@ -204,7 +219,7 @@ if( ! class_exists( 'YITH_WCAUTHNET_Admin' ) ) {
 				'target'     => '#toplevel_page_yit_plugin_panel',
 				'content'    => sprintf( '<h3> %s </h3> <p> %s </p>',
 					__( 'YITH Authorize.net', 'yit' ),
-					__( 'In the YIT Plugins tab you can find the YITH WooCommerce Authorize.net options. With this menu, you can access to all the settings of our plugins that you have activated.', 'yith-wcauthnet' )
+					apply_filters( 'yith_wcauthnet_activated_pointer_content', sprintf( __( 'In the YIT Plugins tab you can find the YITH WooCommerce Authorize.net options. From this menu, you can access all the settings of the YITH plugins activated. Wishlist is available in an outstanding PREMIUM version with many new options, <a href="%s">discover it now</a>.', 'yith-wcauthnet' ), $this->get_premium_landing_uri() ) )
 				),
 				'position'   => array( 'edge' => 'left', 'align' => 'center' ),
 				'init'  => YITH_WCAUTHNET_INIT
@@ -212,6 +227,23 @@ if( ! class_exists( 'YITH_WCAUTHNET_Admin' ) ) {
 
 			YIT_Pointers()->register( $args );
 		}
+
+        /**
+         * Premium Tab Template
+         *
+         * Load the premium tab template on admin page
+         *
+         * @return   void
+         * @since    1.0
+         * @author   Andrea Grillo <andrea.grillo@yithemes.com>
+         * @return void
+         */
+        public function premium_tab() {
+            $premium_tab_template = YITH_WCAUTHNET_DIR . 'templates/admin/premium.php';
+            if ( file_exists( $premium_tab_template ) ) {
+                include_once( $premium_tab_template );
+            }
+        }
 	}
 }
 

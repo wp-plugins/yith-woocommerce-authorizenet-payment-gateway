@@ -97,9 +97,9 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 			$this->title = $this->get_option( 'title' );
 			$this->description = $this->get_option( 'description' );
 			$this->card_types = $this->get_option( 'card_types' );
-			$this->login_id = $this->get_option( 'login_id' );
-			$this->transaction_key = $this->get_option( 'transaction_key' );
-			$this->md5_hash = $this->get_option( 'md5_hash' );
+			$this->login_id = trim( $this->get_option( 'login_id' ) );
+			$this->transaction_key = trim( $this->get_option( 'transaction_key' ) );
+			$this->md5_hash = trim( $this->get_option( 'md5_hash' ) );
 			$this->sandbox = $this->get_option( 'sandbox' );
 			$this->debug = $this->get_option( 'debug' );
 
@@ -141,18 +141,18 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 				'title' => array(
 					'title' => __( 'Title', 'yith-wcauthnet' ),
 					'type' => 'text',
-					'description' => __( 'This voice lets you change the title which users see during the checkout.', 'yith-wcauthnet' ),
+					'description' => __( 'This option lets you change the title that users see during the checkout.', 'yith-wcauthnet' ),
 					'default' => __( 'Authorize.net Payment', 'yith-wcauthnet' ),
 					'desc_tip'      => true,
 				),
 				'description' => array(
 					'title' => __( 'Description', 'yith-wcauthnet' ),
 					'type' => 'textarea',
-					'description' => __( 'This voice lets you change the description that users see during checkout.', 'yith-wcauthnet' ),
-					'default' => ''
+					'description' => __( 'This option lets you change the description that users see during checkout.', 'yith-wcauthnet' ),
+					'default' => __( 'Accepts Payments. Anywhere', 'yith-wcauthnet' )
 				),
 				'card_types' => array(
-					'title'       => __( 'Accepted Card Logos', 'yith-wcauthnet' ),
+					'title'       => __( 'Acceptance logos', 'yith-wcauthnet' ),
 					'type'        => 'multiselect',
 					'desc_tip'    => __( 'Select which credit card logo to display on your checkout page', 'yith-wcauthnet' ),
 					'default'     => array( 'visa', 'mastercard', 'amex', 'discover', 'diners', 'jcb' ),
@@ -164,25 +164,25 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 							'mastercard' => __( 'MasterCard', 'yith-wcauthnet' ),
 							'amex' => __( 'American Express', 'yith-wcauthnet' ),
 							'discover' => __( 'Discover', 'yith-wcauthnet' ),
-							'diners' => __( 'Dinser\'s Club', 'yith-wcauthnet' ),
+							'diners' => __( 'Diner\'s Club', 'yith-wcauthnet' ),
 							'jcb' => __( 'JCB', 'yith-wcauthnet' ),
 						)
 					)
 				),
 				'login_id' => array(
 					'title' => __( 'Login ID', 'yith-wcauthnet' ),
-					'type' => 'password',
+					'type' => 'text',
 					'description' => __( 'Univocal ID login associated to the account of the admin (it can be recovered in the "API Login ID and Transaction Key" section)', 'yith-wcauthnet' )
 				),
 				'transaction_key' => array(
 					'title' => __( 'Transaction Key', 'yith-wcauthnet' ),
-					'type' => 'password',
+					'type' => 'text',
 					'description' => __( 'A unique key used to validate requests to Authorize.net (it can be recovered in the "API Login ID and Transaction Key" section)', 'yith-wcauthnet' )
 				),
 				'md5_hash' => array(
 					'title' => __( 'Md5 Hash', 'yith-wcauthnet' ),
-					'type' => 'password',
-					'description' => __( 'A unique key used to validate the answers from Authorize.net (it can be set in the " MD5 Hash " section)', 'yith-wcauthnet' )
+					'type' => 'text',
+					'description' => __( 'A unique key used to validate the answers from Authorize.net (it can be set in the "MD5 Hash" section). You can activate this mode and set these details of your Authorize.net dashboard in Account -> Md5 Hash. The check will be done only in redirect mode, as the API connection is already protected with SSL.', 'yith-wcauthnet' )
 				),
 				'sandbox' => array(
 					'title' => __( 'Enable Authorize.net sandbox', 'yith-wcauthnet' ),
@@ -192,7 +192,7 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 				'debug' => array(
 					'title' => __( 'Debug Log', 'yith-wcauthnet' ),
 					'type' => 'checkbox',
-					'description' => sprintf( __( 'Log Authorize.net events inside <code>%s</code>', 'yith-wcauthnet' ), wc_get_log_file_path( 'authorize.net' ) )
+					'description' => sprintf( __( 'Log of the Authorize.net events inside <code>%s</code>', 'yith-wcauthnet' ), wc_get_log_file_path( 'authorize.net' ) )
 				)
 			) );
 		}
@@ -405,7 +405,7 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 
 				if( ! empty( $order ) ){
 					$order->update_status( 'failed', __( 'Authorize.net API error: unknown error.', 'yith-wcauthnet' ) );
-					wc_add_notice( __( 'Unkown error', 'yith-wcauthnet' ), 'error' );
+					wc_add_notice( __( 'Unknown error', 'yith-wcauthnet' ), 'error' );
 					$this->redirect_via_html( $order->get_checkout_order_received_url() );
 					die();
 				}
@@ -425,9 +425,9 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 					}
 
 					// Put this order on-hold for manual checking
-					$order->update_status( 'on-hold', sprintf( __( 'Validation error: Authorize.net amounts do not match (amount %s).', 'yith-wcauthnet' ), $amount ) );
+					$order->update_status( 'on-hold', sprintf( __( 'Validation error: Authorize.net amounts do not match with (%s).', 'yith-wcauthnet' ), $amount ) );
 
-					wc_add_notice( sprintf( __( 'Validation error: Authorize.net amounts do not match (amount %s).', 'yith-wcauthnet' ), $amount ), 'error' );
+					wc_add_notice( sprintf( __( 'Validation error: Authorize.net amounts do not match with (%s).', 'yith-wcauthnet' ), $amount ), 'error' );
 					$valid_response = false;
 				}
 
@@ -468,6 +468,10 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 
 					if( ! empty( $trans_account_number ) ){
 						update_post_meta( $order->id, 'x_card_num', $trans_account_number );
+					}
+
+					if ( 'yes' == $this->debug ) {
+						$this->log->add( 'authorize.net', 'Payment Result: ' . print_r( $_POST, true ) );
 					}
 
 					// Remove cart

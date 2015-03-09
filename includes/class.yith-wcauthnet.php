@@ -71,6 +71,10 @@ if( ! class_exists( 'YITH_WCAUTHNET' ) ){
 
 			// add filter to append wallet as payment gateway
 			add_filter( 'woocommerce_payment_gateways', array( $this, 'add_to_gateways' ) );
+
+			if( defined( 'YITH_WCAUTHNET_PREMIUM' ) && YITH_WCAUTHNET_PREMIUM ){
+				YITH_WCAUTHNET_Premium();
+			}
 		}
 		
 		/**
