@@ -13,10 +13,12 @@ YITH Authorize.net allows your users to pay using the Authorize.net network serv
 == Description ==
 
 YITH Authorize.net Payment Gateway extends the WooCommerce default payment modes, adding the possibility to pay with credit cards through the services offered by the Authorize.net network. A system that indeed includes an amount of reliability, with the guarantee that your purchase process will not be stopped by lost payments. In addition, research have proved that the more payment methods are available on your website, the more website's reliability is improved: this means that adding credit card will persuade more in choosing your shop to purchase.
-Main features:
-- Use of Authorize.net for the payment system
-- Neat redirect to Authorize.net's pages for the conclusion of the payment
-- A completely automatic Instant Payment Notification service managed by Authorize.net
+
+= Main features: =
+
+*   Use of Authorize.net for the payment system
+*   Neat redirect to Authorize.net's pages for the conclusion of the payment
+*   A completely automatic Instant Payment Notification service managed by Authorize.net
 
 = Installation =
 
