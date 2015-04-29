@@ -292,9 +292,9 @@ class YIT_CPT_Unlimited {
 	}
 
 	public function filter_active( $wp_query ) {
-		if ( isset( $wp_query->query['suppress_filters'] ) )
+		if ( is_admin() && isset( $wp_query->query['suppress_filters'] ) )
 			$wp_query->query['suppress_filters'] = false;
-		if ( isset( $wp_query->query_vars['suppress_filters'] ) )
+		if ( is_admin() && isset( $wp_query->query_vars['suppress_filters'] ) )
 			$wp_query->query_vars['suppress_filters'] = false;
 		return $wp_query;
 	}
@@ -1751,7 +1751,7 @@ class YIT_CPT_Unlimited {
 
 
         // check if we are in archive template
-        if ( !( ! is_admin() && is_archive() && isset( $wp_query->post->post_type ) && $this->_is_valid( $wp_query->post->post_type ) ) ) {
+         if ( !( ! is_admin() && is_archive() && isset($wp_query->post) && $this->_is_valid( $wp_query->post->post_type ) ) ) {
             return;
         }
 

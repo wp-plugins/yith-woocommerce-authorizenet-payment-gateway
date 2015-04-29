@@ -101,6 +101,7 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 			$this->transaction_key = trim( $this->get_option( 'transaction_key' ) );
 			$this->md5_hash = trim( $this->get_option( 'md5_hash' ) );
 			$this->sandbox = $this->get_option( 'sandbox' );
+			$this->transaction_type = $this->get_option( 'transaction_type' );
 			$this->debug = $this->get_option( 'debug' );
 
 			// Logs
@@ -158,7 +159,7 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 					'default'     => array( 'visa', 'mastercard', 'amex', 'discover', 'diners', 'jcb' ),
 					'class'       => 'chosen_select',
 					'css'         => 'width: 350px;',
-					'options'     => apply_filters( 'yith_wcauthne_card_types',
+					'options'     => apply_filters( 'yith_wcauthnet_card_types',
 						array(
 							'visa'   => __( 'Visa', 'yith-wcauthnet' ),
 							'mastercard' => __( 'MasterCard', 'yith-wcauthnet' ),
@@ -188,6 +189,19 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 					'title' => __( 'Enable Authorize.net sandbox', 'yith-wcauthnet' ),
 					'type' => 'checkbox',
 					'description' => __( 'Activate the sandbox mode to test the configuration', 'yith-wcauthnet' )
+				),
+				'transaction_type' => array(
+					'title'       => __( 'Transaction type', 'yith-wcauthnet' ),
+					'type'        => 'select',
+					'desc_tip'    => __( 'Select which type of transaction you want to send', 'yith-wcauthnet' ),
+					'default'     => 'AUTH_CAPTURE',
+					'css'         => 'width: 350px;',
+					'options'     => apply_filters( 'yith_wcauthnet_transaction_type',
+						array(
+							'AUTH_CAPTURE' => __( 'Authorize & Capture', 'yith-wcauthnet' ),
+							'AUTH_ONLY' => __( 'Authorize only', 'yith-wcauthnet' )
+						)
+					)
 				),
 				'debug' => array(
 					'title' => __( 'Debug Log', 'yith-wcauthnet' ),
@@ -303,7 +317,7 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 			$sequence = $order_id;
 			$version = '3.1';
 			$relay_response = 'TRUE';
-			$type = 'AUTH_CAPTURE';
+			$type = $this->transaction_type;
 			$description = 'Order ' . $order_number;
 			$show_form = 'PAYMENT_FORM';
 			$currency_code = $order_currency;
@@ -325,7 +339,7 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 			$ship_to_state = $order->shipping_state;
 			$cancel_url = WC()->cart->get_checkout_url();
 			$cancel_button_label = apply_filters( 'yith_wcauthnet_cancel_button_label', __( 'Cancel Payment', 'yith-wcauthnet' ) );
-			$relay_url = add_query_arg( 'wc-api', $this->id, home_url() );
+			$relay_url = esc_url( add_query_arg( 'wc-api', $this->id, home_url() ) );
 
 			// Itemized request information
 			$tax_info = array();

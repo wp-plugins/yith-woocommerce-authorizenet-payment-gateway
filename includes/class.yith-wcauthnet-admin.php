@@ -219,7 +219,7 @@ if( ! class_exists( 'YITH_WCAUTHNET_Admin' ) ) {
 				'target'     => '#toplevel_page_yit_plugin_panel',
 				'content'    => sprintf( '<h3> %s </h3> <p> %s </p>',
 					__( 'YITH Authorize.net', 'yit' ),
-					apply_filters( 'yith_wcauthnet_activated_pointer_content', sprintf( __( 'In the YIT Plugins tab you can find the YITH WooCommerce Authorize.net options. From this menu, you can access all the settings of the YITH plugins activated. Wishlist is available in an outstanding PREMIUM version with many new options, <a href="%s">discover it now</a>.', 'yith-wcauthnet' ), $this->get_premium_landing_uri() ) )
+					apply_filters( 'yith_wcauthnet_activated_pointer_content', sprintf( __( 'In the YIT Plugins tab you can find the YITH WooCommerce Authorize.net options. From this menu, you can access all the settings of the YITH plugins activated. YITH Authorize.net is available in an outstanding PREMIUM version with many new options, <a href="%s">discover it now</a>.', 'yith-wcauthnet' ), $this->get_premium_landing_uri() ) )
 				),
 				'position'   => array( 'edge' => 'left', 'align' => 'center' ),
 				'init'  => YITH_WCAUTHNET_INIT

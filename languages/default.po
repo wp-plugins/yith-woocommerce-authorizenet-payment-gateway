@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH WooCommerce Authorize.net\n"
-"POT-Creation-Date: 2015-03-09 09:55+0100\n"
-"PO-Revision-Date: 2015-03-09 09:55+0100\n"
+"POT-Creation-Date: 2015-04-29 15:09+0100\n"
+"PO-Revision-Date: 2015-04-29 15:09+0100\n"
 "Last-Translator: \n"
 "Language-Team: Your Inspiration Themes <plugins@yithemes.com>\n"
 "Language: English\n"
@@ -38,11 +38,11 @@ msgid "Authorize.net"
 msgstr ""
 
 #: ../includes/class.yith-wcauthnet-admin.php:175
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:265
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:279
 #: ../plugin-fw/lib/yit-cpt-unlimited.php:1048
 #: ../plugin-fw/lib/yit-cpt-unlimited.php:1196
 #: ../plugin-fw/lib/yit-cpt-unlimited.php:1202
-#: ../plugin-fw/lib/yit-plugin-panel.php:62
+#: ../plugin-fw/lib/yit-plugin-panel.php:64
 msgid "Settings"
 msgstr ""
 
@@ -59,8 +59,8 @@ msgstr ""
 msgid ""
 "In the YIT Plugins tab you can find the YITH WooCommerce Authorize.net "
 "options. From this menu, you can access all the settings of the YITH plugins "
-"activated. Wishlist is available in an outstanding PREMIUM version with many "
-"new options, <a href=\"%s\">discover it now</a>."
+"activated. YITH Authorize.net is available in an outstanding PREMIUM version "
+"with many new options, <a href=\"%s\">discover it now</a>."
 msgstr ""
 
 #: ../includes/class.yith-wcauthnet-credit-card-gateway.php:88
@@ -71,97 +71,97 @@ msgstr ""
 msgid "Pay with Authorize.net"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:136
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:137
 msgid "Enable/Disable"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:138
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:139
 msgid "Enable Authorize.net Payment"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:142
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:143
 msgid "Title"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:144
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:145
 msgid ""
 "This option lets you change the title that users see during the checkout."
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:145
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:146
 msgid "Authorize.net Payment"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:149
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:150
 msgid "Description"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:151
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:152
 msgid ""
 "This option lets you change the description that users see during checkout."
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:152
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:153
 msgid "Accepts Payments. Anywhere"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:155
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:156
 msgid "Acceptance logos"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:157
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:158
 msgid "Select which credit card logo to display on your checkout page"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:163
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:164
 msgid "Visa"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:164
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:165
 msgid "MasterCard"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:165
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:166
 msgid "American Express"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:166
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:167
 msgid "Discover"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:167
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:168
 msgid "Diner's Club"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:168
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:169
 msgid "JCB"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:173
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:174
 msgid "Login ID"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:175
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:176
 msgid ""
 "Univocal ID login associated to the account of the admin (it can be "
 "recovered in the \"API Login ID and Transaction Key\" section)"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:178
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:179
 msgid "Transaction Key"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:180
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:181
 msgid ""
 "A unique key used to validate requests to Authorize.net (it can be recovered "
 "in the \"API Login ID and Transaction Key\" section)"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:183
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:184
 msgid "Md5 Hash"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:185
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:186
 msgid ""
 "A unique key used to validate the answers from Authorize.net (it can be set "
 "in the \"MD5 Hash\" section). You can activate this mode and set these "
@@ -170,32 +170,48 @@ msgid ""
 "protected with SSL."
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:188
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:189
 msgid "Enable Authorize.net sandbox"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:190
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:191
 msgid "Activate the sandbox mode to test the configuration"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:193
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:194
+msgid "Transaction type"
+msgstr ""
+
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:196
+msgid "Select which type of transaction you want to send"
+msgstr ""
+
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:201
+msgid "Authorize & Capture"
+msgstr ""
+
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:202
+msgid "Authorize only"
+msgstr ""
+
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:207
 msgid "Debug Log"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:195
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:209
 #, php-format
 msgid "Log of the Authorize.net events inside <code>%s</code>"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:253
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:267
 msgid "Please enter Login ID and Transaction Key for Authorize.net gateway."
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:270
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:284
 msgid "Getting started"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:271
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:285
 msgid ""
 "An Authorize.Net Payment Gateway account allows you to accept credit cards "
 "and electronic checks from websites and Internet auction sites. Our "
@@ -203,55 +219,55 @@ msgid ""
 "businesses."
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:273
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:287
 msgid "Sign up now"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:273
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:287
 msgid "Learn more"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:327
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:341
 msgid "Cancel Payment"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:396
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:410
 msgid "N/D"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:407
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:421
 msgid "Authorize.net API error: unknown error."
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:408
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:422
 msgid "Unknown error"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:428
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:430
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:442
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:444
 #, php-format
 msgid "Validation error: Authorize.net amounts do not match with (%s)."
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:441
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:443
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:455
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:457
 #, php-format
 msgid ""
 "Validation error: Authorize.net responses from a different email address "
 "than (%s)."
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:457
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:459
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:471
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:473
 msgid "Validation error: MD5 Hash control failed."
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:466
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:480
 #, php-format
 msgid "Authorize.net payment completed (message: %s). Transaction ID: %s"
 msgstr ""
 
-#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:482
+#: ../includes/class.yith-wcauthnet-credit-card-gateway.php:496
 #, php-format
 msgid "Payment error: %s"
 msgstr ""
@@ -462,82 +478,81 @@ msgstr ""
 msgid "Add with multiupload"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel-wc.php:345
+#: ../plugin-fw/lib/yit-plugin-panel-wc.php:295
 msgid "The changes you have made will be lost if you leave this page."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:61
+#: ../plugin-fw/lib/yit-plugin-panel.php:63
 msgid "Plugin Settings"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:92
+#: ../plugin-fw/lib/yit-plugin-panel.php:95
 #: ../plugin-fw/lib/yit-plugin-subpanel.php:101
 msgid "YIT Plugins"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:271
+#: ../plugin-fw/lib/yit-plugin-panel.php:292
 #: ../plugin-fw/lib/yit-plugin-subpanel.php:142
 #: ../plugin-fw/templates/panel/woocommerce/woocommerce-form.php:5
 msgid "Save Changes"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:274
+#: ../plugin-fw/lib/yit-plugin-panel.php:295
 #: ../plugin-fw/templates/panel/woocommerce/woocommerce-form.php:8
 msgid ""
 "If you continue with this action, you will reset all options in this page."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:276
+#: ../plugin-fw/lib/yit-plugin-panel.php:297
 #: ../plugin-fw/lib/yit-plugin-subpanel.php:147
-#: ../plugin-fw/templates/panel/woocommerce/woocommerce-form.php:10
-msgid "Reset Defaults"
+msgid "Reset to Default"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:276
+#: ../plugin-fw/lib/yit-plugin-panel.php:297
 #: ../plugin-fw/lib/yit-plugin-subpanel.php:147
 #: ../plugin-fw/templates/panel/woocommerce/woocommerce-form.php:10
 msgid "Are you sure?"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:410
+#: ../plugin-fw/lib/yit-plugin-panel.php:431
 msgid ""
 "The element you have entered already exists. Please, enter another name."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:411
+#: ../plugin-fw/lib/yit-plugin-panel.php:432
 msgid "Settings saved"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:412
+#: ../plugin-fw/lib/yit-plugin-panel.php:433
 msgid "Settings reset"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:413
+#: ../plugin-fw/lib/yit-plugin-panel.php:434
 msgid "Element deleted correctly."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:414
-#: ../plugin-fw/lib/yit-plugin-panel.php:415
+#: ../plugin-fw/lib/yit-plugin-panel.php:435
+#: ../plugin-fw/lib/yit-plugin-panel.php:436
 msgid "Element updated correctly."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:416
+#: ../plugin-fw/lib/yit-plugin-panel.php:437
 msgid "Database imported correctly."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:417
+#: ../plugin-fw/lib/yit-plugin-panel.php:438
 msgid "An error has occurred during import. Please try again."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:418
+#: ../plugin-fw/lib/yit-plugin-panel.php:439
 msgid "The added file is not valid."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:419
+#: ../plugin-fw/lib/yit-plugin-panel.php:440
 msgid "Sorry, import is disabled."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-plugin-panel.php:420
+#: ../plugin-fw/lib/yit-plugin-panel.php:441
 msgid "Sorting successful."
 msgstr ""
 
@@ -582,47 +597,47 @@ msgid ""
 "YIT Plugin tab."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:119
+#: ../plugin-fw/lib/yit-upgrade.php:123
 msgid "There is a new version of %plugin_name% available."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:120
+#: ../plugin-fw/lib/yit-upgrade.php:124
 msgid "View version %latest% details."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:121
+#: ../plugin-fw/lib/yit-upgrade.php:125
 msgid "Automatic update is unavailable for this plugin,"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:122
+#: ../plugin-fw/lib/yit-upgrade.php:126
 msgid ""
 "please <a href=\"%activate_link%\">activate</a> your copy of %plugin_name%."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:123
+#: ../plugin-fw/lib/yit-upgrade.php:127
 msgid "Update now."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:226
+#: ../plugin-fw/lib/yit-upgrade.php:230
 msgid "Yithemes Repository"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:260
+#: ../plugin-fw/lib/yit-upgrade.php:264
 msgid "Invalid URL Provided."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:273
+#: ../plugin-fw/lib/yit-upgrade.php:277
 msgid "Could not create Temporary file."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:414
+#: ../plugin-fw/lib/yit-upgrade.php:419
 #, php-format
 msgid ""
 "There is a new version of %1$s available. <a href=\"%2$s\" class=\"thickbox "
 "yit-changelog-button\" title=\"%3$s\">View version %4$s details</a>."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:416
+#: ../plugin-fw/lib/yit-upgrade.php:421
 #, php-format
 msgid ""
 "There is a new version of %1$s available. <a href=\"%2$s\" class=\"thickbox "
@@ -631,7 +646,7 @@ msgid ""
 "automatic updates.</em>"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:418
+#: ../plugin-fw/lib/yit-upgrade.php:423
 #, php-format
 msgid ""
 "There is a new version of %1$s available. <a href=\"%2$s\" class=\"thickbox "
@@ -640,7 +655,7 @@ msgid ""
 "title=\"Licence activation\">activate</a> your copy of %6s.</em>"
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:420
+#: ../plugin-fw/lib/yit-upgrade.php:425
 #, php-format
 msgid ""
 "There is a new version of %1$s available. <a href=\"%2$s\" class=\"thickbox "
@@ -648,75 +663,75 @@ msgid ""
 "href=\"%5$s\">update now</a>."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:493
+#: ../plugin-fw/lib/yit-upgrade.php:498
 msgid "You can't update the plugins for this site."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:497
+#: ../plugin-fw/lib/yit-upgrade.php:502
 msgid ""
 "You do not have sufficient permissions to update the plugins for this site."
 msgstr ""
 
-#: ../plugin-fw/lib/yit-upgrade.php:504
+#: ../plugin-fw/lib/yit-upgrade.php:509
 msgid "Update Plugin"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-licence.php:148
+#: ../plugin-fw/licence/lib/yit-licence.php:161
 #, php-format
 msgid "%field% field cannot be empty"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-licence.php:149
+#: ../plugin-fw/licence/lib/yit-licence.php:162
 msgid "%field_1% and %field_2% fields cannot be empty"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-licence.php:150
+#: ../plugin-fw/licence/lib/yit-licence.php:163
 msgid "Unable to contact the remote server, please try again later. Thanks!"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-licence.php:529
+#: ../plugin-fw/licence/lib/yit-licence.php:548
 msgid "Invalid Request"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-licence.php:530
+#: ../plugin-fw/licence/lib/yit-licence.php:549
 msgid "Invalid licence key"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-licence.php:531
+#: ../plugin-fw/licence/lib/yit-licence.php:550
 msgid "Software has been deactivated"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-licence.php:532
+#: ../plugin-fw/licence/lib/yit-licence.php:551
 msgid "Maximum number of activations exceeded"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-licence.php:533
+#: ../plugin-fw/licence/lib/yit-licence.php:552
 msgid "Invalid instance ID"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-licence.php:534
+#: ../plugin-fw/licence/lib/yit-licence.php:553
 msgid "Invalid security key"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-licence.php:535
+#: ../plugin-fw/licence/lib/yit-licence.php:554
 msgid "Licence key has expired"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-licence.php:536
+#: ../plugin-fw/licence/lib/yit-licence.php:555
 msgid "Licence key has been banned"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-plugin-licence.php:63
 #: ../plugin-fw/licence/lib/yit-plugin-licence.php:64
-#: ../plugin-fw/licence/lib/yit-theme-licence.php:63
+#: ../plugin-fw/licence/lib/yit-plugin-licence.php:65
 #: ../plugin-fw/licence/lib/yit-theme-licence.php:64
-#: ../plugin-fw/licence/lib/yit-theme-licence.php:106
+#: ../plugin-fw/licence/lib/yit-theme-licence.php:65
 #: ../plugin-fw/licence/lib/yit-theme-licence.php:107
+#: ../plugin-fw/licence/lib/yit-theme-licence.php:108
 msgid "Licence Activation"
 msgstr ""
 
-#: ../plugin-fw/licence/lib/yit-theme-licence.php:114
 #: ../plugin-fw/licence/lib/yit-theme-licence.php:115
+#: ../plugin-fw/licence/lib/yit-theme-licence.php:116
 #, php-format
 msgid "%s"
 msgstr ""
@@ -727,72 +742,92 @@ msgstr ""
 
 #: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:23
 msgid ""
+"I cannot find the license key for activating the theme I have bought some "
+"time ago. Where can I find it?"
+msgstr ""
+
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:26
+msgid ""
+"If you have purchased one of our products before 27 January 2015, you can "
+"benefit from support and updates (the services offered with the license)\n"
+"            until 27 January 2016 and you do not have to purchase it again "
+"to get a new license key, because, before this date, your license used to be "
+"activated automatically by our system.\n"
+"            After 27 January 2016, instead, if you want to benefit from "
+"support and updates you have to buy a new license and activate it through "
+"the license key you will be\n"
+"            provided with and that you can find in your YIThemes account, in "
+"section \"My licenses\"."
+msgstr ""
+
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:37
+msgid ""
 "Have you updated your licenses? Have you asked for an extension? Update "
 "information concerning your products."
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:25
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:39
 msgid "Update licence information"
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:35
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:49
 msgid "Products to be activated"
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:54
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:68
 msgid "Activate"
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:73
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:87
 msgid "Activated"
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:77
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:109
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:133
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:91
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:123
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:147
 msgid "Product Name"
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:78
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:110
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:134
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:145
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:337
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:92
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:124
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:148
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:148
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:340
 msgid "Email"
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:79
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:111
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:135
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:93
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:125
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:149
 msgid "Licence Key"
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:80
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:136
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:94
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:150
 msgid "Expires"
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:81
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:95
 msgid "Remaining"
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:82
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:95
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:137
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:147
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:96
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:109
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:151
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:161
 msgid "Renew"
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:93
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:107
 #, php-format
 msgid "%1s out of %2s"
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:105
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:119
 msgid "Banned"
 msgstr ""
 
-#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:129
+#: ../plugin-fw/licence/templates/panel/activation/activation-panel.php:143
 msgid "Expired"
 msgstr ""
 
@@ -808,180 +843,180 @@ msgstr ""
 msgid "+ Add New Category"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:5
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:7
 msgid "Text Input"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:6
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:8
 msgid "Checkbox"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:7
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:9
 msgid "Select"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:8
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:10
 msgid "Textarea"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:9
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:11
 msgid "Radio Input"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:10
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:12
 msgid "Password Field"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:11
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:13
 msgid "File Upload"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:45
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:47
 msgid "Theme Icon"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:46
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:48
 msgid "Custom Icon"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:47
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:49
 #: ../plugin-fw/templates/metaboxes/types/responsivesliders.php:24
 msgid "None"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:57
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:60
 msgid "Add field"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:66
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:258
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:69
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:261
 #: ../plugin-fw/templates/metaboxes/types/customtabs.php:37
 #: ../plugin-fw/templates/metaboxes/types/customtabs.php:82
 msgid "Remove"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:67
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:259
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:70
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:262
 msgid "Click to toggle"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:74
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:266
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:77
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:269
 msgid "Title Field"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:78
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:270
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:81
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:273
 msgid "Insert the title for the field."
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:83
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:275
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:86
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:278
 msgid "Data Name"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:87
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:279
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:90
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:282
 msgid ""
 "REQUIRED: Field identification name to be entered into email body. "
 "<strong>Note:</strong>Use only lowercase characters and underscores."
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:92
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:284
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:95
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:287
 msgid "Type field"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:100
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:292
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:103
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:295
 msgid "Select the type for this field."
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:105
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:297
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:108
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:300
 msgid "Checked"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:109
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:301
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:112
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:304
 msgid "Select this option if you want this field appears as already checked."
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:114
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:306
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:117
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:309
 msgid "Add options "
-msgstr ""
-
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:115
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:307
-msgid "Add option"
 msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:118
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:310
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:432
-msgid "Selected"
+msgid "Add option"
 msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:121
 #: ../plugin-fw/templates/metaboxes/types/contactform.php:313
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:432
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:436
+msgid "Selected"
+msgstr ""
+
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:124
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:316
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:436
 msgid "Delete option"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:127
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:319
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:130
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:322
 msgid "Error Message"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:131
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:323
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:134
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:326
 msgid "Insert the error message for validation."
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:136
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:328
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:139
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:331
 msgid "Required"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:140
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:332
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:143
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:335
 msgid "Select this option if it must be required."
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:149
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:341
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:152
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:344
 msgid "Select this option if the email must be valid."
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:154
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:346
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:157
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:349
 msgid "Reply To"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:158
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:350
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:161
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:353
 msgid "Select this if it is the email you can reply to."
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:163
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:355
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:166
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:358
 msgid "Class"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:167
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:359
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:170
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:362
 msgid ""
 "Insert additional class(es) (separated by commas) for more personalization."
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:172
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:364
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:175
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:367
 msgid "Icon"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:200
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:388
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:203
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:391
 #: ../plugin-fw/templates/metaboxes/types/icon-list.php:69
 #: ../plugin-fw/templates/metaboxes/types/select-icon.php:33
 #: ../plugin-fw/templates/metaboxes/types/upload.php:21
@@ -990,25 +1025,25 @@ msgstr ""
 msgid "Upload"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:206
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:394
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:209
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:397
 #: ../plugin-fw/templates/metaboxes/types/icon-list.php:75
 #: ../plugin-fw/templates/metaboxes/types/select-icon.php:39
 msgid "Image preview"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:214
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:402
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:217
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:405
 msgid "Insert an icon for more personalization."
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:219
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:406
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:222
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:409
 msgid "Width"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:244
-#: ../plugin-fw/templates/metaboxes/types/contactform.php:418
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:247
+#: ../plugin-fw/templates/metaboxes/types/contactform.php:421
 msgid "Set field length."
 msgstr ""
 
@@ -1048,34 +1083,34 @@ msgstr ""
 msgid "(Default: <i %s></i> )"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/image-gallery.php:35
 #: ../plugin-fw/templates/metaboxes/types/image-gallery.php:40
-#: ../plugin-fw/templates/metaboxes/types/images.php:33
-#: ../plugin-fw/templates/metaboxes/types/images.php:59
+#: ../plugin-fw/templates/metaboxes/types/image-gallery.php:45
+#: ../plugin-fw/templates/metaboxes/types/images.php:38
+#: ../plugin-fw/templates/metaboxes/types/images.php:64
 msgid "Delete image"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/image-gallery.php:40
+#: ../plugin-fw/templates/metaboxes/types/image-gallery.php:45
 msgid "Add Images to Gallery"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/image-gallery.php:40
+#: ../plugin-fw/templates/metaboxes/types/image-gallery.php:45
 msgid "Add to gallery"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/image-gallery.php:40
+#: ../plugin-fw/templates/metaboxes/types/image-gallery.php:45
 msgid "Add images"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/image-gallery.php:40
+#: ../plugin-fw/templates/metaboxes/types/image-gallery.php:45
 msgid "Delete"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/images.php:37
+#: ../plugin-fw/templates/metaboxes/types/images.php:42
 msgid "Upload new images"
 msgstr ""
 
-#: ../plugin-fw/templates/metaboxes/types/images.php:70
+#: ../plugin-fw/templates/metaboxes/types/images.php:75
 msgid "Are you sure you want to remove this image?"
 msgstr ""
 
@@ -1153,6 +1188,10 @@ msgstr ""
 
 #: ../plugin-fw/templates/metaboxes/types/typography.php:100
 msgid "Italic bold"
+msgstr ""
+
+#: ../plugin-fw/templates/panel/woocommerce/woocommerce-form.php:10
+msgid "Reset Defaults"
 msgstr ""
 
 #: ../plugin-options/video-box.php:23
