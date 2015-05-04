@@ -4,7 +4,7 @@ Contributors: yithemes
 Tags: authorize.net, woocommerce, products, themes, yit, e-commerce, shop, payment gateway, yith, woocommerce authorize.net payment gateway, woocommerce 2.3 ready, credit card, authorize
 Requires at least: 3.5.1
 Tested up to: 4.2.1
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,11 @@ YITH Authorize.net Payment Gateway extends the WooCommerce default payment modes
 YITH WooCommerce Authorize.net Payment Gateway will add a new submenu called "Authorize.net" under "YIT Plugins" menu. Here you are able to configure all the plugin settings.
 
 == Changelog ==
+
+= 1.0.3 =
+
+* Fixed: "Plugin Documentation" link appearing on all plugins
+* Fixed: minor bugs
 
 = 1.0.2 =
 
@@ -69,6 +74,7 @@ Full documentation is available [here](http://yithemes.com/docs-plugins/yith-woo
 
 == Upgrade notice ==
 
-= 1.0.2 =
+= 1.0.3 =
 
-* Added: handling for "Capture only" transactions
+* Fixed: "Plugin Documentation" link appearing on all plugins
+* Fixed: minor bugs

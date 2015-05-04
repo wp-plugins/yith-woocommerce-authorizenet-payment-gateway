@@ -197,7 +197,9 @@ if( ! class_exists( 'YITH_WCAUTHNET_Admin' ) ) {
 		 * @use plugin_row_meta
 		 */
 		public function plugin_row_meta( $plugin_meta, $plugin_file, $plugin_data, $status ) {
-			$plugin_meta[] = '<a href="' . $this->_official_documentation . '" target="_blank">' . __( 'Plugin Documentation', 'yith-wcauthnet' ) . '</a>';
+			if ( $plugin_file == plugin_basename( YITH_WCAUTHNET_DIR . 'init.php' ) ) {
+				$plugin_meta[] = '<a href="' . $this->_official_documentation . '" target="_blank">' . __( 'Plugin Documentation', 'yith-wcauthnet' ) . '</a>';
+			}
 
 			return $plugin_meta;
 		}
