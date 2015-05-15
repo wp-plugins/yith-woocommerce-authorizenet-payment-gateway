@@ -26,7 +26,7 @@ YITH Authorize.net Payment Gateway extends the WooCommerce default payment modes
 2. Upload the plugin folder into the `wp-content/plugins/` directory of your WordPress site.
 3. Activate `YITH WooCommerce Authorize.net Payment Gateway` from Plugins page
 
-YITH WooCommerce Authorize.net Payment Gateway will add a new submenu called "Authorize.net" under "YIT Plugins" menu. Here you are able to configure all the plugin settings.
+YITH WooCommerce Authorize.net Payment Gateway will add a new submenu called "Authorize.net" under "YIT Plugins" menu. Here you are able to configure all the plugin settings
 
 == Changelog ==
 
@@ -37,7 +37,7 @@ YITH WooCommerce Authorize.net Payment Gateway will add a new submenu called "Au
 
 = 1.0.2 =
 
-* Added: handling for "Capture only" transactions
+* Added: handling for "Authorize only" transactions
 * Fixed: escaped add_query_arg and remove_query_arg
 
 = 1.0.1 =
