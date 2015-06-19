@@ -356,10 +356,10 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 			$timestamp = time();
 
 			if( phpversion() >= '5.1.2' ) {
-				$fingerprint = hash_hmac( "md5", $this->login_id . "^" . $order_id . "^" . $timestamp . "^" . $order_total . "^" . $order_currency , $this->transaction_key );
+				$fingerprint = hash_hmac( "md5", $this->login_id . "^" . $order_id . "^" . $timestamp . "^" . number_format( $order_total, 2, '.', '' ) . "^" . $order_currency , $this->transaction_key );
 			}
 			else {
-				$fingerprint = bin2hex( mhash( MHASH_MD5, $this->login_id . "^" . $order_id . "^" . $timestamp . "^" . $order_total . "^" . $order_currency , $this->transaction_key ) );
+				$fingerprint = bin2hex( mhash( MHASH_MD5, $this->login_id . "^" . $order_id . "^" . $timestamp . "^" . number_format( $order_total, 2, '.', '' ) . "^" . $order_currency , $this->transaction_key ) );
 			}
 
 			// Include payment form template
