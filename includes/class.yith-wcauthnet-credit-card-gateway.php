@@ -339,7 +339,7 @@ if( ! class_exists( 'YITH_WCAUTHNET_Credit_Card_Gateway' ) ){
 			$ship_to_state = $order->shipping_state;
 			$cancel_url = WC()->cart->get_checkout_url();
 			$cancel_button_label = apply_filters( 'yith_wcauthnet_cancel_button_label', __( 'Cancel Payment', 'yith-wcauthnet' ) );
-			$relay_url = esc_url( add_query_arg( 'wc-api', $this->id, home_url() ) );
+			$relay_url = esc_url( add_query_arg( 'wc-api', $this->id, user_trailingslashit( home_url() ) ) );
 
 			// Itemized request information
 			$tax_info = array();

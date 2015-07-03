@@ -22,7 +22,7 @@ if ( ! defined( 'YITH_WCAUTHNET' ) ) {
 
 <form id="authorize_net_payment_form" method='POST' action='<?php echo esc_url( $process_url ); ?>' >
 	<input type="hidden" name="x_login" value="<?php echo esc_attr( $login_id )?>" />
-	<input type="hidden" name="x_amount" value="<?php echo esc_attr( $amount )?>" />
+	<input type="hidden" name="x_amount" value="<?php echo esc_attr( number_format( $amount, 2, '.', '' ) )?>" />
 	<input type="hidden" name="x_invoice_num" value="<?php echo esc_attr( $invoice )?>" />
 	<input type="hidden" name="x_fp_sequence" value="<?php echo esc_attr( $sequence )?>" />
 	<input type="hidden" name="x_fp_hash" value="<?php echo esc_attr( $fingerprint )?>" />
