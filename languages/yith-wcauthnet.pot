@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH WooCommerce Authorize.net\n"
-"POT-Creation-Date: 2015-06-19 16:24+0100\n"
+"POT-Creation-Date: 2015-08-12 17:28+0100\n"
 "PO-Revision-Date: 2015-04-29 15:09+0100\n"
 "Last-Translator: \n"
 "Language-Team: Your Inspiration Themes <plugins@yithemes.com>\n"
@@ -268,7 +268,7 @@ msgstr ""
 #: ../init.php:109
 msgid ""
 "YITH WooCommerce Authorize.net Payment Gateway is enabled but not effective. "
-"It requires Woocommerce in order to work."
+"It requires WooCommerce in order to work."
 msgstr ""
 
 #: ../plugin-options/video-box.php:23
